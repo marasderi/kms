@@ -1,8 +1,3 @@
-
-## App.svelte (Güncellenmiş)
-`App.svelte`, uygulamanın ana bileşenidir ve tüm sayfaları (anasayfa, profil, yönetim paneli vb.) yönlendirmek için Svelte’nin yönlendirme (routing) özelliğini kullanır. Sol menü (ağaç yapısı), sağ menü (öneriler) ve yönetim paneli entegrasyonu içerir.
-
-```svelte
 <script>
   import { Router, Route } from 'svelte-routing';
   import Header from './components/Header.svelte';
@@ -15,7 +10,6 @@
   let user = null;
 
   onMount(async () => {
-    // Kullanıcı bilgisini al
     const res = await fetch('/api/auth/me', { credentials: 'include' });
     if (res.ok) user = await res.json();
   });
