@@ -10,7 +10,12 @@ Kamuda çalışanlara yönelik metin tabanlı bir mikroblog platformu. Kullanıc
 - Redis (opsiyonel, önbellekleme için)
 
 ### Frontend Kurulumu
-```bash
 cd client
 npm install
 npm run dev
+
+### Backend Kurulumu
+
+cd server
+npm install
+npm start
