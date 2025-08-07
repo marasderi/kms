@@ -6,6 +6,7 @@ const postController = require('../controllers/postController');
 const storyController = require('../controllers/storyController');
 const announcementController = require('../controllers/announcementController');
 const categoryController = require('../controllers/categoryController');
+const searchController = require('../controllers/searchController');
 
 const authenticate = (req, res, next) => {
   const token = req.cookies.token;
@@ -22,13 +23,19 @@ const authenticate = (req, res, next) => {
 router.post('/register', userController.register);
 router.post('/login', userController.login);
 router.get('/auth/me', authenticate, userController.getMe);
+router.get('/users', authenticate, userController.getUsers);
+router.post('/users/:userId/ban', authenticate, userController.banUser);
+router.post('/users/:userId/role', authenticate, userController.updateRole);
 router.post('/posts', authenticate, postController.createPost);
-router.get('/posts', postController.getPosts);
+router.get('/posts', authenticate, postController.getPosts);
+router.post('/posts/:postId/moderate', authenticate, postController.moderatePost);
+router.delete('/posts/:postId', authenticate, postController.deletePost);
 router.post('/stories', authenticate, storyController.createStory);
 router.get('/stories', storyController.getStories);
 router.post('/announcements', authenticate, announcementController.createAnnouncement);
 router.get('/announcements', announcementController.getAnnouncements);
 router.post('/categories', authenticate, categoryController.createCategory);
 router.get('/categories', categoryController.getCategories);
+router.get('/search', authenticate, searchController.searchPosts);
 
 module.exports = router;
