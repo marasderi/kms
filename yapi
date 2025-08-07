@@ -1,0 +1,47 @@
+# Dosya Yapısı
+
+  kamu-mikroblog/
+├── client/                     # Frontend (Svelte)
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Header.svelte
+│   │   │   ├── Footer.svelte
+│   │   │   ├── PostForm.svelte
+│   │   │   ├── PostItem.svelte
+│   │   │   ├── PostList.svelte
+│   │   │   ├── SubscribeButton.svelte
+│   │   │   ├── Announcement.svelte
+│   │   │   ├── Comment.svelte
+│   │   │   ├── Post.svelte
+│   │   │   ├── Story.svelte
+│   │   │   ├── Search.svelte
+│   │   │   ├── Profile.svelte
+│   │   │   ├── Category.svelte
+│   │   ├── App.svelte
+│   │   ├── main.js
+│   ├── public/
+│   │   ├── index.html
+│   ├── package.json
+│   ├── svelte.config.js
+├── server/                     # Backend (Node.js + Express)
+│   ├── controllers/
+│   │   ├── announcementController.js
+│   │   ├── postController.js
+│   │   ├── storyController.js
+│   │   ├── userController.js
+│   │   ├── categoryController.js
+│   ├── models/
+│   │   ├── User.js
+│   │   ├── Post.js
+│   │   ├── Story.js
+│   │   ├── Announcement.js
+│   │   ├── Comment.js
+│   │   ├── Category.js
+│   ├── routes/
+│   │   ├── api.js
+│   ├── config/
+│   │   ├── database.js
+│   ├── server.js
+│   ├── package.json
+├── .gitignore
+├── README.md
