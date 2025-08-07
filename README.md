@@ -14,7 +14,12 @@ Kamuda çalışanlara yönelik metin tabanlı bir mikroblog platformu. Kullanıc
 - **Önbellekleme**: Redis (opsiyonel)
 
 ## Kurulum
-(Kurulum detayları daha sonra eklenecek)
+Gereksinimler
+
+Node.js: v16+  
+PostgreSQL: v13+  
+Git:  
+Docker  
 
 ## Katkıda Bulunma
 1. Depoyu forklayın.
