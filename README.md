@@ -23,9 +23,9 @@ Docker
 
 ## Katkıda Bulunma
 1. Depoyu forklayın.
-2. Yeni bir branch oluşturun (`git checkout -b feature/ozellik`).
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`).
-4. Push edin (`git push origin feature/ozellik`).
+2. Yeni bir branch oluşturun  
+3. Değişikliklerinizi commit edin  
+4. Push edin  
 5. Pull Request açın.
 
 ## Lisans
